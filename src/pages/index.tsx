@@ -1,8 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
+import Head from "next/head";
+import styles from "@/styles/Home.module.css";
 
-import styles from '@/styles/Home.module.css'
-
+import Banner from "@/components/pages/banner/Banner";
 
 export default function Home() {
   return (
@@ -14,8 +13,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-hello
+        <Banner
+          title="Clifford the red dog"
+          subTitle="a very cute dog"
+          imgUrl="/assets/clifford.webp"
+        />
       </main>
     </>
-  )
+  );
 }
