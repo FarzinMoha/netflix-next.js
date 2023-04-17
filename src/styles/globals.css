@@ -103,6 +103,9 @@ section {
 body {
   line-height: 1;
 }
+::selection{
+  background-color: var(--red);
+}
 ol,
 ul {
   list-style: none;
